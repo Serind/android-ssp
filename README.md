@@ -1,4 +1,7 @@
 # SSP - a scalable size unit for texts
+
+[![](https://jitpack.io/v/omiselabs/android-ssp.svg)](https://jitpack.io/#omiselabs/android-ssp)
+
 An android SDK that provides a new size unit - ssp (scalable sp). This size unit scales with the screen size based on the sp size unit (for texts). It can help Android developers with supporting multiple screens.
 
 This is the sibling of the [sdp](https://github.com/intuit/sdp) size unit that should be used for non text views.
@@ -20,20 +23,16 @@ You can see that ssp scales with the screen size and the sp stays with the same 
 # Getting Started
 
 To add ssp to your Android Studio project:
-
-  add implementation 'com.intuit.ssp:ssp-android:1.0.6’ to your build.gradle dependencies block.
-  
-  for example:
   
   ```
   dependencies {
-    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.github.omiselabs:android-ssp:1.0.0'
   }
   ```
   
 See the [ssp_example.xml](https://github.com/intuit/ssp/blob/master/ssp-android/src/main/res/layout/ssp_example.xml) to see how to use to the ssp size unit.
 
-For easy mapping of designs to ssp units, one can create designs with 300 pixels screen width - in this case each pixel in the design corresponds to 1 ssp.
+For easy mapping of designs to ssp units, one can create designs with **375 pixels** screen width - in this case each pixel in the design corresponds to 1 ssp.
 
 # Note
 The ssp size unit calculation includes some approximation due to some performance and usability constraints.
